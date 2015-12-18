@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/frame">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:text="@string/project_id_description"
+        android:linksClickable="true"
+        android:textColorLink="@color/accent"
+        android:autoLink="all"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_above="@+id/projectInputLayout"
+        android:fontFamily="sans-serif-medium"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_centerInParent="true"
+        android:padding="15dp"
+        android:id="@+id/projectInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/project_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/project_url"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/check_id"
+        android:id="@+id/check_id_btn"
+        android:layout_below="@+id/projectInputLayout"/>
+
+</RelativeLayout>

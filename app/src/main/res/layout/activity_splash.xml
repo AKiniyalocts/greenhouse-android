@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:textColor="@color/primary"
+    android:text="@string/app_name"
+    android:fontFamily="sans-serif-condensed"
+    android:textStyle="bold|italic"
+    android:textSize="64sp"
+    android:id="@+id/splash_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.rightmeowapps.greenthumb.ui.SplashActivity"/>
